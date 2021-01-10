@@ -1,0 +1,5 @@
+[flake8]
+per-file-ignores =
+	brain_games/__init__.py:D104
+	brain_games/scripts/__init__.py:D104
+	brain_games/scripts/brain_games.py:E265, WPS421
