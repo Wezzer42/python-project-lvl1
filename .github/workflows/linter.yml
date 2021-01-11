@@ -1,0 +1,14 @@
+name: linter_check
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on: push
+
+jobs:
+  linter_check:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    - name: Run linter
+      run: make lint
