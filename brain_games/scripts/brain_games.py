@@ -8,4 +8,4 @@ def main():
     """Brain games main function."""
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    print('Hello,', name, '!')
+    print('Hello, ', name, '!', sep='')

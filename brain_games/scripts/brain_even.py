@@ -18,12 +18,14 @@ def correct_answer_is(number, user_answer):
             '"',
             user_answer,
             '"is wrong answer ;(. Correct answer was "yes".',
+            sep='',
         )
     elif (number % 2) == 1:
         print(
             '"',
             user_answer,
             '"is wrong answer ;(. Correct answer was "no".',
+            sep='',
         )
     else:
         print('Unknow error')
@@ -56,9 +58,9 @@ def main():
     """Brain even main function."""
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    print('Hello,', name, '!')
+    print('Hello, ', name, '!', sep='')
     even_result = brain_even()
     if even_result == 0:
-        print('Lets try again', name, '!')
+        print('Lets try again ', name, '!', sep='')
     elif even_result == 1:
-        print('Congratulations,', name, '!')
+        print('Congratulations, ', name, '!', sep='')
