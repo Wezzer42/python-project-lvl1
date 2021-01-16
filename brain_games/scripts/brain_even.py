@@ -56,11 +56,12 @@ def brain_even():
 
 def main():
     """Brain even main function."""
+    separation = ''
     print('Welcome to the Brain Games!')
     name = welcome_user()
-    print('Hello, ', name, '!', sep='')
+    print('Hello, ', name, '!', sep=separation)
     even_result = brain_even()
     if even_result == 0:
-        print('Lets try again ', name, '!', sep='')
+        print('Lets try again ', name, '!', sep=separation)
     elif even_result == 1:
-        print('Congratulations, ', name, '!', sep='')
+        print('Congratulations, ', name, '!', sep=separation)
